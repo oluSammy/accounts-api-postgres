@@ -25,6 +25,7 @@ if (process.env.NODE_ENV !== "test") {
     password: process.env.PG_PASSWORD as string,
     host: process.env.PG_HOST as string,
     port: +(process.env.PG_PORT as string),
+    ssl: true,
   })
     .then(() => {
       console.log("Connected to database");
