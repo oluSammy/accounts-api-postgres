@@ -8,6 +8,7 @@ import Pool from "./database/db";
 
 // DATABASE_URL=postgres://samuelolumorin@localhost:5432/accounts npm run migrate up
 /* npm run migrate create rename contents to body */
+//postgres://iaehnpijvklsex:7f5ca09a76499b93b86201ed4c201d1254f048f5ec3991a2b53f9df27c33f19a@ec2-34-205-209-14.compute-1.amazonaws.com:5432/da6ltm7kh5038b npm run migrate up
 
 import indexRouter from "./routes/index";
 
