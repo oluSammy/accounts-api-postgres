@@ -6,9 +6,11 @@
     "start": "node ./bin/www",
     "start:dev": "nodemon ./bin/www",
     "compile": "tsc",
+    "build": "tsc",
     "migrate": "node-pg-migrate",
     "compile:dev": "tsc --watch",
     "test": "jest --no-cache",
+    "postinstall": "npm run compile",
     "heroku-postbuild": "npm run compile && npm run migrate:prod",
     "migrate:dev": "DATABASE_URL=postgres://samuelolumorin@localhost:5432/accounts npm run migrate up",
     "migrate:prod": "node dist/migrate.js"

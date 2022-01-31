@@ -1,5 +1,4 @@
 import migrate from "node-pg-migrate";
-console.log("about to run migration");
 
 migrate({
   direction: "up",
